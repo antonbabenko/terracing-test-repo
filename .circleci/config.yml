@@ -1,0 +1,55 @@
+version: 2
+
+# Default configurations
+terraform: &terraform
+  docker:
+    - image: antonbabenko/terracing:v0.0.2
+  working_directory: /tmp/workspace
+
+jobs:
+  checkout:
+    <<: *terraform
+    steps:
+      - checkout
+      - persist_to_workspace:
+          root: .
+          paths: .
+
+  validate:
+    <<: *terraform
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Add github.com to ~/.ssh/known_hosts (todo move to dockerfile)
+          command: mkdir -p ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      - run:
+          name: Validate Terraform syntax and formatting
+          command: ./scripts/terracing-terraform-validate.sh
+      - run:
+          name: Check if Terraform configurations are properly formatted
+          command: ./scripts/terracing-terraform-fmt.sh
+
+workflows:
+  version: 2
+  test-build-plan-apply:
+    jobs:
+      - checkout
+      - validate:
+          requires:
+            - checkout
+#      - plan_pr:
+#          requires:
+#            - validate
+#      - approve_infrastructure:
+#          <<: *master_workflow_filters
+#          type: approval
+#          requires:
+#            - plan_infrastructure
+#      - apply_infrastructure:
+#          requires:
+#            - approve_infrastructure
+#      - release:
+#          requires:
+#            - apply_infrastructure
+
