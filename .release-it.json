@@ -1,32 +1,17 @@
 {
-  "non-interactive": false,
-  "dry-run": false,
-  "verbose": true,
   "increment": "minor",
   "buildCommand": "pre-commit -a",
   "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
-  "requireCleanWorkingDir": true,
-  "pkgFiles": null,
   "src": {
-    "commitMessage": "Release %s",
-    "tagName": "%s",
-    "tagAnnotation": "Release %s",
-    "beforeStartCommand": false,
-    "beforeStageCommand": false,
-    "afterReleaseCommand": false,
-    "githubAssets": false
-  },
-  "dist": {
-    "repo": false,
-    "pkgFiles": null
+    "tagName": "v%s",
+    "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}.",
+    "githubAssets": false,
+    "push": false
   },
   "npm": {
     "publish": false
   },
   "github": {
-    "release": true,
-    "releaseName": "Release %s",
-    "preRelease": false,
-    "tokenRef": "GITHUB_TOKEN_WITHMETHOD_BOT"
+    "release": true
   }
 }
