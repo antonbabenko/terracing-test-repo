@@ -1,4 +1,9 @@
 <a name=""></a>
+# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.1.0...v) (2018-01-23)
+
+
+
+<a name=""></a>
 # [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.0.0...v) (2018-01-23)
 
 
