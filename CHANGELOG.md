@@ -4,6 +4,13 @@
 
 
 
+<a name="1.5.0"></a>
+# 1.5.0 (2018-01-23)
+
+* Release 1.5.0 ([8004abb](https://github.com/antonbabenko/terracing-test-repo/commit/8004abb))
+
+
+
 <a name="1.4.0"></a>
 # 1.4.0 (2018-01-23)
 
