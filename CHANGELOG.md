@@ -1,4 +1,14 @@
 <a name=""></a>
+# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.0.0...v) (2018-01-23)
+
+
+
+<a name=""></a>
+# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.0.0...v) (2018-01-23)
+
+
+
+<a name=""></a>
 #  (2018-01-23)
 
 * Added .release-it.json ([2b57e78](https://github.com/antonbabenko/terracing-test-repo/commit/2b57e78))
