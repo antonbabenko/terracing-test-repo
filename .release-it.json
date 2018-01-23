@@ -2,8 +2,8 @@
   "increment": "minor",
   "buildCommand": "pre-commit run -a",
   "requireCleanWorkingDir": false,
-  "beforeChangelogCommand": "conventional-changelog -p angular -i CHANGELOG.md -s",
-  "changelogCommand": "conventional-changelog -p standard | tail -n +3",
+  "beforeChangelogCommand": "conventional-changelog -i CHANGELOG.md -s",
+  "changelogCommand": "conventional-changelog | tail -n +3",
   "safeBump": false,
   "pkgFiles": null,
   "src": {

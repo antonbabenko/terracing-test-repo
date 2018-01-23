@@ -1,25 +1,37 @@
 <a name=""></a>
-# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.1.0...v) (2018-01-23)
+#  (2018-01-23)
 
-
-
-<a name=""></a>
-# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.0.0...v) (2018-01-23)
-
-
-
-<a name=""></a>
-# [](https://github.com/antonbabenko/terracing-test-repo/compare/v1.0.0...v) (2018-01-23)
 
 
 
 <a name=""></a>
 #  (2018-01-23)
 
+
+
+
+<a name="1.2.0"></a>
+# 1.2.0 (2018-01-23)
+
+* Release 1.2.0 ([5950fe4](https://github.com/antonbabenko/terracing-test-repo/commit/5950fe4))
+
+
+
+<a name="1.1.0"></a>
+# 1.1.0 (2018-01-23)
+
+* Release 1.1.0 ([1a5059a](https://github.com/antonbabenko/terracing-test-repo/commit/1a5059a))
+
+
+
+<a name="1.0.0"></a>
+# 1.0.0 (2018-01-23)
+
 * Added .release-it.json ([2b57e78](https://github.com/antonbabenko/terracing-test-repo/commit/2b57e78))
 * Added .release-it.json ([6943402](https://github.com/antonbabenko/terracing-test-repo/commit/6943402))
 * Initial commit ([3fe6f08](https://github.com/antonbabenko/terracing-test-repo/commit/3fe6f08))
 * Initial commit with circleci config ([dc36e8c](https://github.com/antonbabenko/terracing-test-repo/commit/dc36e8c))
+* Something more ([e99b6da](https://github.com/antonbabenko/terracing-test-repo/commit/e99b6da))
 
 
 
