@@ -2,7 +2,7 @@
   "increment": "minor",
   "buildCommand": "pre-commit run -a",
   "requireCleanWorkingDir": false,
-  "beforeChangelogCommand": "conventional-changelog -i CHANGELOG.md -s",
+  "beforeChangelogCommand": "conventional-changelog -i CHANGELOG.md --same-file --release-count 0",
   "changelogCommand": "conventional-changelog | tail -n +3",
   "safeBump": false,
   "pkgFiles": null,
